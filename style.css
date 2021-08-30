@@ -1,0 +1,278 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html body {
+  width: 100vw;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.parallax-shuffle-package {
+  display: flex;
+  flex-direction: column;
+}
+
+.sticky-logo {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border: 5px solid #aa0000;
+  height: 10vw;
+  width: 10vw;
+  /*margin: auto;
+  padding: auto;*/
+  left: 0px;
+  top: -300vh;
+  position: relative;
+  text-decoration-color: white;
+  z-index: 5;
+}
+
+.sticky-logo-2 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border: 5px solid black;
+  color: white;
+  height: 10vw;
+  width: 10vw;
+  left: 0vw;
+  top: -100vh;
+  position: relative;
+  text-decoration-color: red;
+  z-index: 10;
+  left: 25vw;
+  top: 50vh;
+  transform: translate(0vw, 0vw);
+}
+
+.h1-sticky-logo-text {
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: black;
+  font-size: 2em;
+}
+
+.h1-sticky-logo-text-2 {
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: red;
+  font-size: 2em;
+}
+
+
+.parallax-static-box-parent {
+  display: flex;
+  width: 100vw;
+  height: auto;
+  flex-direction: row;
+  z-index: 1;
+  
+}
+
+.parallax-box-div {
+  border: 0px solid #ff77ff;
+  width: 50vw;
+  height: auto;
+  z-index: 1
+}
+
+.static-box-div {
+  border: 0px solid #FF2233;
+  width: 50vw;
+  height: auto;
+  z-index: 1
+}
+
+.box {
+  display: flex;
+  width: 50vw;
+  height: clamp(100vh, 100vh, 100vh);
+  justify-content: center;
+  align-items: center
+}
+
+.prlx-box {
+  background-style: cover;
+  position: -webkit-sticky;
+  position: sticky;
+  top: clamp(0vh, 0vh, 0vh);
+  left: 0px;
+}
+
+.static-box {
+}
+
+.prlx-pic-1 {
+  background: url('https://i2.lensdump.com/i/ZrBnT2.jpg');
+  z-index: 1;
+  background-size: cover;
+}
+
+.prlx-pic-2 {
+  background: url('https://i1.lensdump.com/i/ZrBSy9.jpg');
+  background-size: cover;
+  z-index: 2;
+}
+
+.prlx-pic-3 {
+  background: url('https://i3.lensdump.com/i/ZrBlQi.jpg');
+  z-index: 3;
+  background-size: cover;
+}
+
+.prlx-pic-4 {
+  background: url('https://i1.lensdump.com/i/ZrmIZc.jpg');
+  background-size: cover;
+  align-items: center;
+  z-index: 4;
+  top: 0vh;
+  position: relative;
+}
+  
+ .prlx-pic-5 {
+  background: url('https://i3.lensdump.com/i/ZrmiOH.jpg');
+  z-index: 5;
+  background-size: cover;
+}
+
+ .prlx-pic-6 {
+  background: url('https://i2.lensdump.com/i/ZrBH8m.jpg');
+  z-index: 6;
+  background-size: cover;
+}
+  
+  /* make sure the final-prlx-box and the final-static-box both have the same color and specs.*/ 
+  /*You can move the box beneath it up over the bottom boxes to hide the space where the sticky box slides in.  You can also set the scroll point to the height of the main div minus the height of the full-prlx-div, haha!!*/
+
+.h1-static-rect-div {
+  width: clamp(200px, 20vw, 20vw);
+  height: clamp(100px, 30vh, 30vh);
+  text-align: center;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.static-box-1 {
+  background-color: #ddd;
+}
+
+.h1-static-rect1 {
+  border: 5px solid #333;
+  color: #333;
+}
+
+.static-box-2 {
+  background-color: #333;
+}
+
+.h1-static-rect2 {
+  border: 5px solid #ddd;
+  color: #ddd;
+}
+
+.static-box-3 {
+  background-color: #ddd;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.h1-static-rect3 {
+  border: 5px solid #333;
+  color: #333;
+  position: relative;
+  top: 0vh;
+  overflow: hidden;
+}
+
+.static-box-4 {
+  background-color: #333;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.h1-static-rect4 {
+  border: 5px solid #ddd;
+  color: #ddd;
+  position: relative;
+  top: 0vh;
+  overflow: hidden;
+}
+
+.static-box-5 {
+  background-color: #ddd;
+  z-index: 5;
+}
+
+.h1-static-rect5 {
+  border: 5px solid #333;
+  color: #333;
+  position: relative;
+  top: 0vh;
+  overflow: hidden;
+}
+
+.static-box-6 {
+  background-color: #333;
+  z-index: 6;
+}
+
+.h1-static-rect6 {
+  border: 5px solid #ddd;
+  color: #ddd;
+  position: relative;
+  top: 0vh;
+  overflow: hidden;
+}
+
+
+.final-div {
+  width: 100vw;
+  height: 100vh;
+  /*background: url('https://i.lensdump.com/i/0GrrnD.jpg');
+  background-size: cover;*/
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+
+.finalDivTextBox {
+  border: 5px solid black;
+  padding: 20px;
+}
+
+.arrow-text-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 100px;
+}
+
+.pre-anchor-text {
+  font-size: 16px;
+  margin-right: 10px;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: #aa0000;
+}
+
+.top-anchor-link {
+  font-size: 30px;
+  transform: scale(2, 1);
+}
